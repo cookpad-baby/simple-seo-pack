@@ -1,0 +1,5 @@
+{
+  "name": "cookpad-baby/simple-seo-pack",
+  "description": "TitleやDescription、KeywordなどのMeta情報などを設定するプラグインです",
+  "type": "wordpress-plugin"
+}
