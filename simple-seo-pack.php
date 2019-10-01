@@ -3,7 +3,7 @@
 Plugin Name: Simple SEO Pack
 Plugin URI: 
 Description: TitleやDescription、KeywordなどのMeta情報などを設定するプラグインです。
-Version: 190301
+Version: 191001
 Author: Hikari Kato
 Author URI: http://mukaibi.com/
 License: GPL2
@@ -113,13 +113,13 @@ License: GPL2
 				$description = "当クリニックからの最新のお知らせ、診療時間、休診日などを掲載しております。";
 			}
             // Custom Post Type - recruit
-			elseif( is_post_type_archive('recruit') ) {
-				$description = "採用情報では、なないろキッズクリニックで一緒に働いてくださるスタッフを募集しています。採用・求人情報、募集条件の詳細は直接お問い合わせください。";
-			}
+//			elseif( is_post_type_archive('recruit') ) {
+//				$description = "採用情報では、一緒に働いてくださるスタッフを募集しています。採用・求人情報、募集条件の詳細は直接お問い合わせください。";
+//			}
             // Custom Post Type - faq
-			elseif( is_post_type_archive('faq') ) {
-				$description = "みなさまからよく寄せられるご質問をまとめさせていただきました。予防接種や乳幼児健診の予約、当クリニックの院内感染への配慮、診療時間外の診療について掲載しております。";
-			}
+//			elseif( is_post_type_archive('faq') ) {
+//				$description = "みなさまからよく寄せられるご質問をまとめさせていただきました。予防接種や乳幼児健診の予約、当クリニックの院内感染への配慮、診療時間外の診療について掲載しております。";
+//			}
 		}
 		 
 		elseif ( is_single() ) {
@@ -194,14 +194,14 @@ License: GPL2
 			$keywords = get_option('set-kywords') . "," . get_post_type_object(get_post_type())->label;
 			// 任意で追加・変更可
 			if( is_post_type_archive('information') ) {
-				$keywords = "なないろキッズクリニック, 小児科, お知らせ, 新着情報, 休診, 診療時間";
+				$keywords = "産婦人科, お知らせ, 新着情報, 休診, 診療時間";
 			}
-            elseif( is_post_type_archive('recruit') ) {
-				$keywords = "なないろキッズクリニック, 小児科, 採用情報, 求人, スタッフ募集, 看護師, 医療事務";
-			}
-            elseif( is_post_type_archive('faq') ) {
-				$keywords = "なないろキッズクリニック, 小児科, お問い合わせ, 予防接種, 乳幼児健診, 予約, 院内感染, 診療時間外, 診療";
-			}
+//            elseif( is_post_type_archive('recruit') ) {
+//				$keywords = "なないろキッズクリニック, 小児科, 採用情報, 求人, スタッフ募集, 看護師, 医療事務";
+//			}
+//            elseif( is_post_type_archive('faq') ) {
+//				$keywords = "なないろキッズクリニック, 小児科, お問い合わせ, 予防接種, 乳幼児健診, 予約, 院内感染, 診療時間外, 診療";
+//			}
 		}
 		
 		elseif ( is_single() ) {
